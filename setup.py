@@ -26,7 +26,7 @@ setup(
     url='https://github.com/victorlin/design-patterns',
     license='MIT',
     version=version,
-    packages=find_packages(),
+    packages=find_packages(exclude=('tests', )),
     install_requires=[
     ],
     extras_require=dict(
