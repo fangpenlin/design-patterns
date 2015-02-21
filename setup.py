@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 version = '0.0.0'
 try:
-    import design_patterns 
+    import design_patterns
     version = design_patterns.__version__
 except ImportError:
     pass
