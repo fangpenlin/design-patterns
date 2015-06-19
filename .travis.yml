@@ -5,13 +5,12 @@ env:
   - TOXENV=py27
   - TOXENV=py34
 # command to install dependencies
-install: 
+install:
   - 'easy_install -U setuptools'
   - 'pip install -U pip'
   - 'pip install tox'
 # command to run tests
-script: 
-  - 'py.test -svvv --cov-report term-missing --cov design_patterns tests'
+script:
   - 'tox'
   - 'pip install flake8'
   - 'flake8 design_patterns --ignore=E501,W293'
