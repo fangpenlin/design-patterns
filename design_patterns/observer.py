@@ -1,5 +1,7 @@
 from __future__ import unicode_literals
 
+from future.utils import itervalues
+
 
 class SubscribeID(object):
 
@@ -43,5 +45,5 @@ class Subject(object):
         """Notify all observers which observe this subject
 
         """
-        for observer in list(self.observers.itervalues()):
+        for observer in list(itervalues(self.observers)):
             observer(*args, **kwargs)
