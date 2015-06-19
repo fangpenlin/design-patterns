@@ -20,6 +20,13 @@ tests_require = [
 setup(
     name='design-patterns',
     description='Useful design patterns for Python',
+    classifiers=[
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python",
+    ],
     keywords='design patterns',
     author='Victor Lin',
     author_email='hello@victorlin.me',
@@ -28,6 +35,7 @@ setup(
     version=version,
     packages=find_packages(exclude=('tests', )),
     install_requires=[
+        'future',
     ],
     extras_require=dict(
         tests=tests_require,
