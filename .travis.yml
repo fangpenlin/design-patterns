@@ -13,4 +13,5 @@ install:
 script: 
   - 'py.test -svvv --cov-report term-missing --cov design_patterns tests'
   - 'tox'
+  - 'pip install flake8'
   - 'flake8 design_patterns --ignore=E501,W293'
